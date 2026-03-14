@@ -2,259 +2,262 @@
 <html lang="es">
 
 <head>
-<meta charset="UTF-8">
-<title>Mawi Piscinas - Mantenimiento de Piscinas en Costa Esmeralda</title>
-<meta name="description" content="Servicio profesional de limpieza y mantenimiento de piscinas en Costa Esmeralda. Pedí tu presupuesto y contacto directo por WhatsApp.">
-<meta name="keywords" content="mantenimiento de piscinas, limpieza de piscinas, Costa Esmeralda, desagote, control de químicos">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mawi Piscinas - Mantenimiento de Piscinas en Costa Esmeralda</title>
+    <meta name="description" content="Mawi Piscinas: Servicio profesional de limpieza y mantenimiento de piscinas en Costa Esmeralda. Solicita tu presupuesto y mantené tu piscina impecable todo el año.">
+    
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial;
+            background-color: #e6f7ff;
+            text-align: center;
+            margin: 0;
+        }
 
-<style>
+        /* Portada */
+        .portada {
+            background-image: url("images/mantenimiento-piscina-costa-esmeralda-1.jpg");
+            height: 400px;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            position: relative;
+        }
 
-/* Estilos generales */
-body{
-    font-family: Arial;
-    background-color: #e6f7ff;
-    text-align: center;
-    margin: 0;
-}
+        .portada::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.4);
+            z-index: 1;
+        }
 
-/* Portada */
-.portada{
-    background-image: url("images/piscina 1.jpg");
-    height: 400px;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    position: relative;
-}
+        .portada h1,
+        .portada h2 {
+            position: relative;
+            z-index: 2;
+            margin: 0;
+        }
 
-/* Franja semitransparente */
-.portada::before{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,0.4);
-    z-index: 1;
-}
+        h1 {
+            color: #ffd700;
+            text-shadow: 2px 2px 6px black;
+        }
 
-/* Texto sobre la franja */
-.portada h1,
-.portada h2{
-    position: relative;
-    z-index: 2;
-    margin: 0;
-}
+        h2 {
+            color: #00ffff;
+            text-shadow: 2px 2px 6px black;
+            margin-top: 10px;
+        }
 
-h1{
-    color: #ffd700;
-    text-shadow: 2px 2px 6px black;
-}
+        /* Lista de servicios */
+        ul {
+            list-style: none;
+            padding: 0;
+        }
 
-h2{
-    color: #00ffff;
-    text-shadow: 2px 2px 6px black;
-    margin-top: 10px;
-}
+        ul li {
+            color: #0077b6;
+            font-weight: bold;
+            font-size: 18px;
+            margin: 5px 0;
+        }
 
-/* Lista de servicios */
-ul{
-    list-style: none;
-    padding: 0;
-}
+        /* Texto con palabras clave */
+        span.limpieza {
+            color: #0077b6;
+            font-weight: bold;
+        }
 
-ul li{
-    color: #0077b6;
-    font-weight: bold;
-    font-size: 18px;
-    margin: 5px 0;
-}
+        span.mantenimiento {
+            color: #ff4500;
+            font-weight: bold;
+        }
 
-/* Palabras clave visuales */
-span.limpieza{ color: #0077b6; font-weight:bold; }
-span.mantenimiento{ color: #ff4500; font-weight:bold; }
-span.piscinas{ color: #32cd32; font-weight:bold; }
-span.costa{ color: #00ffff; font-weight:bold; }
+        span.costa {
+            color: #00ffff;
+            font-weight: bold;
+        }
 
-/* Galería de fotos */
-.galeria{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin: 20px 0;
-}
+        /* Galería de fotos */
+        .galeria {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 20px 0;
+        }
 
-.foto{
-    width: 300px;
-    height: 200px;
-    object-fit: cover;
-    margin: 10px;
-    border-radius: 10px;
-}
+        .foto {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+            margin: 10px;
+            border-radius: 10px;
+        }
 
-/* Botón flotante */
-.whatsapp{
-    position: fixed;   
-    bottom: 20px;      
-    right: 20px;       
-    z-index: 100;      
-}
+        /* Botón flotante */
+        .whatsapp {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 100;
+        }
 
-.whatsapp button{
-    background: linear-gradient(to right, #25D366, #128C7E);
-    color: white;
-    border: none;
-    padding: 15px 20px;
-    font-size: 18px;
-    border-radius: 50px;
-    cursor: pointer;
-    box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
-}
+        .whatsapp button {
+            background: linear-gradient(to right, #25D366, #128C7E);
+            color: white;
+            border: none;
+            padding: 15px 20px;
+            font-size: 18px;
+            border-radius: 50px;
+            cursor: pointer;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+        }
 
-.whatsapp button:hover{
-    background-color: #128C7E;
-}
+        .whatsapp button:hover {
+            background-color: #128C7E;
+        }
 
-/* Formulario de presupuesto */
-form{
-    margin: 20px auto;
-    width: 90%;
-    max-width: 500px;
-    text-align: left;
-}
+        /* Formulario de presupuesto */
+        form {
+            margin: 20px auto;
+            width: 90%;
+            max-width: 500px;
+            text-align: left;
+        }
 
-input, textarea{
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    font-size: 16px;
-    box-sizing: border-box;
-}
+        input,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
 
-form button{
-    background-color: #ff7f50;
-    color: white;
-    border: none;
-    padding: 12px 20px;
-    font-size: 18px;
-    border-radius: 8px;
-    cursor: pointer;
-}
+        form button {
+            background-color: #ff7f50;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            font-size: 18px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
 
-form button:hover{
-    background-color: #ff6347;
-}
+        form button:hover {
+            background-color: #ff6347;
+        }
 
-/* Footer */
-footer{
-    background-color: #0077b6;
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-    margin-top: 30px;
-    font-size: 16px;
-}
+        /* Footer */
+        footer {
+            background-color: #0077b6;
+            color: white;
+            padding: 15px 0;
+            margin-top: 20px;
+        }
 
-footer a{
-    color: #ffd700;
-    text-decoration: none;
-}
+        footer a {
+            color: #ffd700;
+            text-decoration: none;
+        }
 
-footer a:hover{
-    text-decoration: underline;
-}
+        /* Ajustes para celular */
+        @media (max-width: 600px) {
+            .foto {
+                width: 90%;
+                height: auto;
+            }
 
-/* Ajustes para celular */
-@media (max-width: 600px) {
+            h1 {
+                font-size: 28px;
+            }
 
-    .foto{
-        width: 90%;
-        height: auto;
-    }
+            h2 {
+                font-size: 20px;
+            }
 
-    h1{
-        font-size: 28px;
-    }
+            ul li {
+                font-size: 16px;
+            }
 
-    h2{
-        font-size: 20px;
-    }
+            form {
+                width: 95%;
+            }
 
-    ul li{
-        font-size: 16px;
-    }
-
-    form{
-        width: 95%;
-    }
-
-    .whatsapp button{
-        padding: 12px 18px;
-        font-size: 16px;
-    }
-}
-
-</style>
+            .whatsapp button {
+                padding: 12px 18px;
+                font-size: 16px;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
-<!-- Portada -->
-<div class="portada">
-    <h1>Mawi Piscinas</h1>
-    <h2>Mantenimiento de <span class="piscinas">Piscinas</span> en <span class="costa">Costa Esmeralda</span></h2>
-</div>
+    <!-- Portada -->
+    <div class="portada">
+        <h1>Mawi Piscinas</h1>
+        <h2>Mantenimiento de Piscinas en Costa Esmeralda</h2>
+    </div>
 
-<!-- Servicios -->
-<p>
-Servicio profesional de <span class="limpieza">limpieza</span> y <span class="mantenimiento">mantenimiento</span> de <span class="piscinas">piscinas</span>.<br>
-Trabajamos en <span class="costa">Costa Esmeralda</span>.
-</p>
+    <!-- Servicios -->
+    <p>
+        Servicio profesional de <span class="limpieza">limpieza</span> y <span class="mantenimiento">mantenimiento</span> de
+        piscinas.<br>
+        Trabajamos en <span class="costa">Costa Esmeralda</span>.
+    </p>
 
-<h3>Servicios</h3>
-<ul>
-    <li>Limpieza de <span class="piscinas">piscinas</span></li>
-    <li>Desagote</li>
-    <li>Mantenimiento semanal</li>
-    <li>Control de productos químicos</li>
-</ul>
+    <h3>Servicios</h3>
+    <ul>
+        <li>Limpieza de piscinas</li>
+        <li>Desagote</li>
+        <li>Mantenimiento semanal</li>
+        <li>Control de productos químicos</li>
+    </ul>
 
-<!-- Galería de fotos -->
-<h3>Algunas piscinas</h3>
-<div class="galeria">
-    <img src="images/piscina 3.jpg" class="foto">
-    <img src="images/piscina 2.jpg" class="foto">
-</div>
+    <!-- Galería de fotos -->
+    <h3>Algunas piscinas</h3>
+    <div class="galeria">
+        <img src="images/mantenimiento-piscina-costa-esmeralda-1.jpg" class="foto" alt="Piscina en Costa Esmeralda">
+        <img src="images/mantenimiento-piscina-costa-esmeralda-2.jpg" class="foto" alt="Limpieza de piscina">
+        <img src="images/mantenimiento-piscina-costa-esmeralda-3.jpg" class="foto" alt="Mantenimiento de piscina">
+    </div>
 
-<!-- Formulario de presupuesto -->
-<h3>Solicitá tu presupuesto</h3>
-<form action="mailto:mawipiscinas@gmail.com" method="post" enctype="text/plain">
-    <input type="text" name="Nombre" placeholder="Tu nombre" required><br><br>
-    <input type="email" name="Email" placeholder="Tu email" required><br><br>
-    <textarea name="Mensaje" placeholder="Detalles del presupuesto" rows="4" required></textarea><br><br>
-    <button type="submit">Enviar Presupuesto</button>
-</form>
+    <!-- Formulario de presupuesto -->
+    <h3>Solicitá tu presupuesto</h3>
+    <form action="mailto:mawipiscinas@gmail.com" method="post" enctype="text/plain">
+        <input type="text" name="Nombre" placeholder="Tu nombre" required><br><br>
+        <input type="email" name="Email" placeholder="Tu email" required><br><br>
+        <textarea name="Mensaje" placeholder="Detalles del presupuesto" rows="4" required></textarea><br><br>
+        <button type="submit">Enviar Presupuesto</button>
+    </form>
 
-<!-- Botón flotante de WhatsApp -->
-<div class="whatsapp">
-    <a href="https://wa.me/5492267471690" target="_blank">
-        <button>WhatsApp</button>
-    </a>
-</div>
+    <!-- Botón flotante de WhatsApp -->
+    <div class="whatsapp">
+        <a href="https://wa.me/5492267471690" target="_blank">
+            <button>WhatsApp</button>
+        </a>
+    </div>
 
-<!-- Footer -->
-<footer>
-    <p><strong>Pablo Albertal</strong></p>
-    <p>Celular: 2267-471690</p>
-    <p>Email: <a href="mailto:mawipiscinas@gmail.com">mawipiscinas@gmail.com</a></p>
-</footer>
+    <!-- Footer -->
+    <footer>
+        <p><strong>Pablo Albertal</strong></p>
+        <p>Celular: 2267-471690</p>
+        <p>Email: <a href="mailto:mawipiscinas@gmail.com">mawipiscinas@gmail.com</a></p>
+    </footer>
 
 </body>
+
 </html>
